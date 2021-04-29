@@ -1,5 +1,5 @@
 Project Overview
-PROJECT NAME: Portfolio
+PROJECT NAME: React Project
 
 PROJECT AUTHOR: Gabriel Ramirez
 
