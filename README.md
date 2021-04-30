@@ -1,176 +1,185 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 2: React
-#### Overview
+# Project Overview
 
-Let's kick it up a notch and build a modular and modern front end application using React!
+## Project Links
 
-Like with project one, the Unit 2 project is a chance to be creative and build something you should be proud of. You will be working individually for this project, but we'll be guiding you along the process and helping as you go. 
+- [https://github.com/adgreenie/react.git](https://github.com/adgreenie/react.git)
+- [https://answer10.web.app/](https://answer10.web.app/)
 
-You must submit your full project proposal to your squad leader by 10AM EST Monday.
+## Project Description
 
-Show us what you've got!
+For this project, I plan to make a random user generator. I will use React's Link and Source to provide access to instructions. 500 random 'users' will be populated using an API call. 
 
-## Prerequistes
+## API
 
-In order to help set you up for success you are required to do the following before you attempt to plan out your project:
-
-#### Reading
-
- The [previous cohorts project retrospective](./previous-class-project-retrospective.md)
-
-There are alot of helpful hints and hindsight that were captured after the completion of project 1 which are sure to help provide some guidance on what to and not to do during this project. 
-
-#### Watch
-
- [Mastering Markdown](https://masteringmarkdown.com/) - 34min
-
- You will need to write and update markdown for this project as will be the case for all future projects so it's your responsibility to become familiar with the syntax.  
-
----
-
-## Requirements
-
-#### Your website must:
-- Be a working, interactive, React application.
-- Include data from a third-party API.
-    - TRY OUT your API in the browser by making an fetch request before you get too emotionally invested in it, to make sure it works the way you think it does...**YOU ARE REQUIRED TO SHOW US YOU CAN RECEIVE THE DATA FOR YOUR PROPOSAL**
-- Include React Router with at least 2 routes
-- Have at least 5 separate components, using a readable file structure.
-- Be built using Create React App.
-- Built mobile first 
-- Implement responsive design using flexbox, grid, or another css framework.
-- Use React Hooks
-- Be deployed via [Netlify](https://www.netlify.com/).
-
-### 📋 List of API's
-
- Pull data into the application using an API  
-  - [List of Public APIs](https://github.com/toddmotto/public-apis)  
-  - [More APIs](https://github.com/abhishekbanthia/Public-APIs)  
-
-Below is a non-exhaustive list of some free API's you can use. There are _many_ API's out there, however, so if you find one not on this list that you'd like to use, feel free! Please note that some may require signing up for an API key (e.g. the Marvel API).
-
-  1. Marvel: https://developer.marvel.com/
-  1. Star Wars: https://swapi.co/
-  1. Weather: https://openweathermap.org/api
-  1. News: https://newsapi.org/
-  1. Giphy: https://developers.giphy.com/
-  1. Pokemon: http://pokeapi.co/
-  1. Card Deck: https://deckofcardsapi.com/
-  1. Google Books: https://developers.google.com/books/
-  1. City of Chicago: https://data.cityofchicago.org/
-  1. Beer: https://www.brewerydb.com/developers
-  1. Chuck Norris: http://www.icndb.com/
-  1. Rick and Morty: https://rickandmortyapi.com/documentation/#rest
-  
-Lastly, the following sites congregates a bunch of API's together, so you can take a look through their libraries and try to find an API that interests you! Note, however, that not all API's are free and many listed may require payment. We **highly suggest** to use a free API for your first project dealing with one. 
-
-  1. https://github.com/toddmotto/public-apis
-  1. https://rapidapi.com/
-
-### Additional APIs
-
-#### Music
-
-* https://bandcamp.com/developer
-* https://developers.soundcloud.com/docs/api/reference
-
-#### Gov
-
-* https://developer.cityofnewyork.us/api/open311-inquiry
-
-#### Games
-
-* https://igdb.github.io/api/
-
-#### Social Media
-
-* https://developer.twitter.com/en/docs/tweets/search/overview
-
-#### Your code must:
-
-- Be properly indented.  
-- Be written with semantic, camelCase JavaScript variable names.  
-- Be written with kebab-case (dashes) CSS class names.  
-- Contain no `console.log()` or commented out code in final version.  
-- Use only React for DOM manipulation.  
-- No pre-loaded `create-react-app` files or code.
-
-## Necessary Deliverables
-
-#### Commits
-- Repo must contain frequent commits (min 15+) dating back to the beginning of the project.
-
-#### A Professional README
-- Refer to this [blog](https://medium.com/@meakaakka/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3) as a great resource on how to create a readme.
-
-#### A Killer Project Proposal:
-- Refer to the [project worksheet](/project-worksheet.md) file in this repo for structuring your Proposal.
-
-#### For the project:
-- A git repository hosted on GitHub, with a link to your hosted project, and **frequent** commits dating back to the very beginning of the project (YOUR APP SHOULD BE LOCATED IN A SEPARATE STANDING REPO. DO NOT build your app in this repository. YOU MUST initiate a new repo on your GitHub account.) 
-
-<hr>
-
-## Tips
-
-Read the following articles posted by previous students into how they planned and organized their thoughts into building a unit project.
-- [REACT.js : A Haunting by Sami Schonefeld
-](https://medium.com/@samischonefeld/react-js-a-haunting-cd2aaf15541f)
-- [how-i-built-my-first-obama-themed-javascript-game by Sarah Currey
-](https://medium.com/@sarah.currey/how-i-built-my-first-obama-themed-javascript-game-b06f7c62af4c)
-
--Commit early, commit often:   Don't be afraid to break something because you can always go back in time to a previous version.
+https://randomuser.me/api/?results=500
 
 
-## Check out these awesome websites for inspiration
-- https://www.foursquare.com
-- https://www.nike.com
-- https://www.airbnb.com
-- https://www.stripe.com
-- https://www.etsy.com
-- https://www.moma.org
-- https://www.nytimes.com
-- https://www.mint.com
-- https://www.popeyes.com
-- https://www.bk.com/menu/burgers
+```
+{
+{
+"gender": "female",
+"name": {
+"title": "Miss",
+"first": "Aleena",
+"last": "Erikstad"
+},
+"location": {
+"street": {
+"number": 8009,
+"name": "Noreveien"
+},
+"city": "Sogndalsfjøra",
+"state": "Vestfold",
+"country": "Norway",
+"postcode": "4640",
+"coordinates": {
+"latitude": "54.2817",
+"longitude": "94.2900"
+},
+"timezone": {
+"offset": "+6:00",
+"description": "Almaty, Dhaka, Colombo"
+}
+},
+"email": "aleena.erikstad@example.com",
+"login": {
+"uuid": "024cc9bf-8c1c-4534-8b33-f7c25246b4a9",
+"username": "brownwolf527",
+"password": "carpedie",
+"salt": "WfVtosFS",
+"md5": "6ec5b7bb1c3fbd8ec92a87069aa0a47c",
+"sha1": "519256aa3136b1426f2e6c3ad2c3d6807b1290c7",
+"sha256": "dba7343b1cec0a43dc8320de95a2456b78a72c6c75a160e6f0d923a8bfce6912"
+},
+"dob": {
+"date": "1985-05-29T03:59:25.179Z",
+"age": 36
+},
+"registered": {
+"date": "2004-09-23T22:10:41.025Z",
+"age": 17
+},
+"phone": "22472664",
+"cell": "40096259",
+"id": {
+"name": "FN",
+"value": "29058510007"
+},
+"picture": {
+"large": "https://randomuser.me/api/portraits/women/34.jpg",
+"medium": "https://randomuser.me/api/portraits/med/women/34.jpg",
+"thumbnail": "https://randomuser.me/api/portraits/thumb/women/34.jpg"
+},
+"nat": "NO"
+},
+```
 
-## Getting Unstuck
 
-* **Don't hesitate to write messy code to solve short-term problems**&mdash;***Refactor later***
-* **Read the docs for whatever technologies you use**. The docs often include a tutorial that can help you get started, and learning to read documentation is crucial to your success as a developer.
+## Wireframes
 
-## Asking For Help
+Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-### In-person Support
+- [wireframes](https://wireframepro.mockflow.com/view/green-proj2-wireframe)
+- [react architecture](https://sitemap.mockflow.com/view/green-proj2-architecture)
 
-Each student will be given 5 (five) tokens, redeemable at any time during regular
-class (not including evening Office hours), for 20 minutes
-with an instructor. Tokens cannot be transferred between students - there is no
-black market for tokens.
 
-Instructors will not be holding open office hours during project week. This is
-to give you the opportunity to solve issues and errors you run in to on your own
-and with your classmates. The TA however, will still hold his office hours as planned.
+### MVP/PostMVP - 5min
 
-An instructor will be assigned to each team and wil check in with your team
-every day for about 15 minutes. The purpose of these check-ins is not to
-discuss technical questions, but to answer questions about workflow and get a status checkin.
+The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
-#### Maximizing Effectiveness of Support Sessions
+#### MVP EXAMPLE
+- Fully functional, interactive, trivia game
+	- Questions/possible answers populated by API call
+	- Tells player if selected answer is correct
+	- Keeps track of score
+- Navbar with options that link to their corresponding pages
+- Options page that allows player to select trivia theme/difficulty
+- Instructions page
 
-Prior to using one of your tokens, we ***strongly recommend*** that you file an issue on this repository in order to both provide the instructor with a point of reference regarding your code and the issue you are having. This will enable us to give you more effective guidance.
+#### PostMVP EXAMPLE
 
-When you submit an issue please include the following:
+- Leaderboard that is updated using Firebase
+- Create multiple leaderboards depending on selected difficulty
 
-  1. A code snippet
-  2. A precise and specific description of your issue
-  3. What error you got
-  4. What you already tried to resolve your error and the result of those attempts
+## Components
+##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
 
-> [Check here for details on this process](asking-for-help.md).
+Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
 
-We also strongly recommend **using Slack to get help from your classmates**. Chances are you all will be running into similar problems.
+| Component | Description | 
+| --- | :---: |  
+| App | Sets up app with React Router | 
+| Header | Renders the header, including the nav | 
+| Footer | Renders the footer |
+| Main | Contains Switch/Routes for content |
+| Gameboard | Renders the trivia game, contains score as state |
+| Question | Renders current question via API call and Answer components |
+| Answer | Renders a possible answer using props from Question |
+| Score | Renders player's score received through props |
+| HighScore | Form that renders at end of game if the player achieves a high score |
+| Options | Renders a form of selectable game options |
+| Instructions | Renders rules and info about the game |
+| Leaderboard | Renders list of top scorers via API call |
 
-## A Note on Plagiarism
+Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
 
-Take a moment to re-familiarize yourself with the [plagiarism policy](https://git.generalassemb.ly/seir-1118/Administrative/blob/master/plagiarism.md), specifically on using work you find online and on work you do with other students.
+Unless otherwise noted, time is listed in hours:
+
+| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Create React app and files for all components | H | 1 | 40min | 40min |
+| Basic Navbar & Footer | H | 1 | 45min | 45min |
+| Set up basic React routing | H | 1 | 30min | 30min |
+| Make trivia API call, parse important data | H | 2 | 1.5 | 1.5 |
+| Display questions and selectable answers, change on submit | H | 3 | 4 | 4 |
+| Create logic to test for correct answer | H | 1 | 35min | 35min |
+| Allow only one answer to be selected per question | H | 1 | 1 | 1 |
+| Keep track of score | H | 2 | 2 | 2 |
+| Style game display - basic | H | 2 | 3 | 3 |
+| Make game display dynamic | H | 1 | 1 | 1 |
+| Create game options form | H | 3 | 3 | 3 |
+| Incorporate selected options into API call | H | 1 | 1.5 | 1.5 |
+| Add content for instructions page | H | 1 | 1 | 1 |
+| Make Navbar dynamic using ReactStrap | H | 1 | 1 | INC |
+| Learn how to use Firebase | M | 4 | 3 | 3 |
+| Add submit your score form to end of game | M | 3 | 2 | 2 |
+| Create leaderboard, populate locally | M | 3 | 3 | 3 |
+| Update and populate leaderboard using Firebase | M | 3 | .5 | INC |
+| Create multiple leaderboards, based on selected difficulty | L | 3 | 0 | INC |
+| Additional styling for game (progress bar, etc.) | L | 4 | 5 | 5 |
+| Additional styling for Navbar, Footer, other pages | L | 4 | 9 | 9 |
+| Total | H | 45 | 44 | 44 |
+
+## Additional Libraries
+ReactStrap - responsive navbar, progress bar for game
+Firebase - updating and retrieving leaderboard
+
+## Code Snippet
+
+Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  Code snippet should not be greater than 10 lines of code.
+
+The below code is how the leaderboard is populated. The shorter the name, the more dots are added between the name and score. The font size is set progressively smaller for each entry.
+
+```
+let fontSize = props.gameView ? 24 : 42
+
+scoreList = props.highScores.map((highScore, i) => {
+	let dots = ' . . . '   
+	for (let j = highScore.name.length; j < 12; j += 2) {
+		dots += '. '
+	}
+	if (i > 0) {
+		let mult = (i < 3 ? 2 : 1)
+		props.gameView ? fontSize -= 1 * mult : fontSize -= 3 * mult
+	}
+```
+...
+```
+	return (
+		<li style={{fontSize: `${fontSize}px`, color: color}} key={i}>
+			<span className="bold">{`${i + 1}) `}</span>
+			{highScore.name} {dots} {highScore.score}
+		</li>
+	) 
+})
+```
