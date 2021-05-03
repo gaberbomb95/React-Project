@@ -1,8 +1,10 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { Button } from 'reactstrap'
+import './GenerateUser.css'
 
 const GenerateUser = (props) => {
-  const url = `https://randomuser.me/api/?results=500`;
+  const url = `https://randomuser.me/api/?results=100`;
   const [user, setUser] = useState(null);
 
   const getUser = async () => {
@@ -16,21 +18,20 @@ const GenerateUser = (props) => {
     getUser();
   }, []);
 
-  return (
-    <div>
-      <button onClick={getUser}>Generate Random User</button>
-    </div>
-  );
   const loaded = () => {
     return (
-      <div>
-        <h1>
-          {data.name[0]}/{data._id_quote}
-        </h1>
-        <h2>{coin.rate}</h2>
+      <div className="loaded">
+        <Button onClick={getUser}>Generate Random User</Button>
+        <h4>Generate Different User</h4>
       </div>
     );
-  }; 
+  };
+
+  const loading = () => {
+    return <Button onClick={getUser}>Generate Random User</Button>;
+  };
+
+  return user ? loaded() : loading();
 };
 
 export default GenerateUser;

@@ -17,7 +17,6 @@ function App() {
         <Route path="/generateuser">
           <GenerateUser />
         </Route>
-        
       </Switch>
       <Footer />
     </div>

@@ -7,7 +7,7 @@
 
 ## Project Description
 
-For this project, I plan to make a random user generator. I will use React's Link and Source to provide access to instructions. 500 random 'users' will be populated using an API call. 
+For this project, I plan to make a random user generator. I will use React's Link and Source to provide access to instructions. 100 random 'users' will be populated using an API call. 
 
 ## API
 
