@@ -5,7 +5,14 @@ import Nav from "./components/Nav";
 import Home from "./components/Home";
 import GenerateUser from "./pages/GenerateUser";
 
+
+
 function App() {
+
+  const addUser = () => {
+    console.log("addUser")
+  }
+
   return (
     <div className="App">
       <Nav />
@@ -15,7 +22,7 @@ function App() {
         </Route>
 
         <Route path="/generateuser">
-          <GenerateUser />
+          <GenerateUser addUser={addUser} />
         </Route>
       </Switch>
       <Footer />

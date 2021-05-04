@@ -4,7 +4,7 @@ import "./Footer.css"
 const Footer = (props) => {
     return (
         <div className="footer">
-            <h6> This site was made by Gabriel</h6>
+            <h6> This site was made by TooEmbarrassed ToSay</h6>
         </div>
     )
 }

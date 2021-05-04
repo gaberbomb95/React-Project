@@ -1,3 +1,21 @@
-.loaded .Button {
-    background-color: purple;
+.btn {
+    background-color: indigo;
+}
+.btn1 {
+    margin-top: 100px;
+    height: 150px;
+    width: 150px;
+}
+.cardSpecific {
+    height: 410px;
+    width: 450px;
+    margin-top: 165px;
+    margin-left: 5%;
+    border-radius: 5%;
+}
+.image {
+    border-radius: 10%;
+    height: 300px;
+    width: 400px;
+    margin-left: 25px;
 }

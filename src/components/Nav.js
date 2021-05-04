@@ -10,11 +10,12 @@ const Nav = () => {
         <h3>Home</h3>
       </Link>
 
+      <h1 className="title">MVP Filler</h1>
+      
       <Link to="/generateuser">
         <h3>Generate User</h3>
       </Link>
 
-      <h1 className="title">MVP Filler</h1>
 
       <Link to="/myusers">
         <h3>My Users</h3>
