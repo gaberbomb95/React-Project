@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.css'
+import "bootstrap/dist/css/bootstrap.css";
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
@@ -10,6 +10,6 @@ ReactDOM.render(
     <React.StrictMode>
       <App />
     </React.StrictMode>
-  </Router>
-    , document.getElementById('root')
+  </Router>,
+  document.getElementById("root")
 );

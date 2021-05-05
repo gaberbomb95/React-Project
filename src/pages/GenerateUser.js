@@ -6,6 +6,7 @@ import "./GenerateUser.css";
 const GenerateUser = (props) => {
   const url = `https://randomuser.me/api/?results=100`;
   const [user, setUser] = useState(null);
+  const [userTeam, setUserTeam] = useState(null);
 
   const getUser = async () => {
     const response = await fetch(url);
@@ -22,27 +23,34 @@ const GenerateUser = (props) => {
     return (
       <div>
         <h4>Generate Different User</h4>
-        <Button className="btn" onClick={getUser}>Generate Random User</Button>
+        <Button className="btn" onClick={getUser}>
+          Generate Random User
+        </Button>
       </div>
     );
   };
 
-  const addUser = () => {
-    return 
-  }
+  const addUser = (user) => {
+    return setUserTeam(user.results[0].name);
+  };
+  ;
 
   const getInfo = () => {
     console.log(user);
     return (
       <>
-        <Button className="btn1" onClick={getUser}>Generate Random User</Button>
+        <Button className="btn1" onClick={getUser}>
+          Generate Random User
+        </Button>
         <Card className="cardSpecific">
-         <h1> {user.results[0].name.first} {user.results[0].name.last}{" "}</h1>
+          <h1>
+            {" "}
+            {user.results[0].name.first} {user.results[0].name.last}{" "}
+          </h1>
           <img className="image" src={user.results[0].picture.large}></img>
-          <Button onClick={props.addUser}>Add To Users</Button>
+          <Button onClick={props.addUser()}>Add To Users</Button>
         </Card>
       </>
-
     );
   };
 

@@ -11,7 +11,7 @@ For this project, I plan to make a random user generator. I will use React's Lin
 
 ## API
 
-- [API-Link](https://randomuser.me/api/?results=500)
+- [API-Link](https://randomuser.me/api/?results=100)
 
 
 ```
