@@ -30,8 +30,9 @@ const GenerateUser = (props) => {
     );
   };
 
-  const addUser = (user) => {
-    return setUserTeam(user.results[0].name);
+  const addUser = () => {
+    console.log("addUser", user)
+     setUserTeam(user.results[0].name);
   };
   ;
 
@@ -48,7 +49,7 @@ const GenerateUser = (props) => {
             {user.results[0].name.first} {user.results[0].name.last}{" "}
           </h1>
           <img className="image" src={user.results[0].picture.large}></img>
-          <Button onClick={props.addUser()}>Add To Users</Button>
+          <Button onClick={() => props.addUser()}>Add To Users</Button>
         </Card>
       </>
     );
