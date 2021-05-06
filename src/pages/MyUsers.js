@@ -1,17 +1,17 @@
 import React from 'react'
-import {Card, Button} from 'reactstrap'
+import { Card, Button } from 'reactstrap'
+import "./MyUsers.css"
 
 const MyUsers = (props) => {
     return (
-        <div>
+        <div className="flex">
             {props.userTeam.map((user) => {
                 return  <Card className="cardTeam">
                 <h1>
                   {" "}
                   {user.name.first} {user.name.last}{" "}
                 </h1>
-                <img className="image" src={user.picture.large}></img>
-                <Button onClick={() => props.addUser(user)}>Add To Users</Button>
+                <img className="image2" src={user.picture.large}></img>
               </Card>
             })}
         </div>

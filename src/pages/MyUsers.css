@@ -1,6 +1,18 @@
-.cardTeam {
+.flex {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    height: 200px;
-    width: 200px;
+}
+
+.cardTeam {
+    height: 400px;
+    width: 400px;
+    margin-top: 90px;
+    margin-left: 20px;
+}
+.image2 {
+    height: 250px;
+    width: 250px;
+    margin-left: 70px;
+    border-radius: 3.5%;
 }
