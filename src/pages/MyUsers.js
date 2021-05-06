@@ -1,9 +1,6 @@
 import React from 'react'
 
-const MyUsers = (props) => {
-
-    
-
+const MyUsers = () => {
     return (
         <div>
             
@@ -12,4 +9,3 @@ const MyUsers = (props) => {
 }
 
 export default MyUsers
-
