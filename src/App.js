@@ -5,25 +5,24 @@ import Nav from "./components/Nav";
 import Home from "./components/Home";
 import GenerateUser from "./pages/GenerateUser";
 import { useState } from "react";
-import MyUsers from "./pages/MyUsers"
+import MyUsers from "./pages/MyUsers";
 
 function App() {
   const url = `https://randomuser.me/api/?results=100`;
   const [user, setUser] = useState(null);
-  const [userTeam, setUserTeam] = useState(null);
+  const [userTeam, setUserTeam] = useState([]);
 
   const getUser = async () => {
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data.results[0].name);
     setUser(data);
   };
 
+
   const addUser = (userData) => {
-    console.log(userData);
-    setUserTeam(userData);
-    
+    setUserTeam([...userTeam, userData]);
   };
+
 
   return (
     <div className="App">
@@ -37,7 +36,7 @@ function App() {
           <GenerateUser addUser={addUser} user={user} getUser={getUser} />
         </Route>
 
-        <Route path='/myusers'>
+        <Route path="/myusers">
           <MyUsers userTeam={userTeam} />
         </Route>
       </Switch>
