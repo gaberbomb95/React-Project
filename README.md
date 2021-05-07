@@ -120,13 +120,13 @@ Unless otherwise noted, time is listed in hours:
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Create React app and files for all components | H | 30 | TBD | TBD |
-| Basic Navbar & Footer | H | 30 | TBD | TBD|
-| Pull user data and render it on page | L | 5 | TBD | TBD |
-| (PostMVP) spit out src code | L | 10| TBD | TBD |
-| (PostMVP) implement ReactStrap | H | 5| TBD | TBD |
-| Styling for entire app, other pages | M | 5 | TBD | TBD |
-| Total | H | 26 | TBD | TBD |
+| Create React app and files for all components | H | 30min | 15min | 15min |
+| Basic Navbar & Footer | H | 30min | 1hrs | 1hrs |
+| Pull user data and render it on page | H | 5hrs | 30hrs | 30hrs |
+| (PostMVP) spit out src code | L | 10hrs | TBD | TBD |
+| (PostMVP) implement ReactStrap | H | 5hrs | 2.5hrs | 2.5hrs |
+| Styling for entire app, other pages | M | 5hrs | 2.5hrs | 2.5hrs |
+| Total | H | 26hrs | 36.25hrs | 36.25hrs |
 
 ## Additional Libraries
 ReactStrap
@@ -135,7 +135,26 @@ ReactStrap
 
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  Code snippet should not be greater than 10 lines of code.
 
-The below code is how the user information is populated. 
+The below code is how the user information is populated and it took a lot longer to get it working than I thought it would.
 
 ```
+const getInfo = () => {
+    return (
+      <>
+        <Button className="btn1" onClick={props.getUser}>
+          Generate Random User
+        </Button>
+        <Card className="cardSpecific">
+          <h1>
+            {" "}
+            {props.user.results[0].name.first} {props.user.results[0].name.last}{" "}
+          </h1>
+          <img className="image" src={props.user.results[0].picture.large}></img>
+          <Button onClick={() => props.addUser(props.user.results[0])}>Add To Users</Button>
+        </Card>
+      </>
+    );
+  };
+
+
 
